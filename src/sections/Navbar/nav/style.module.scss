@@ -1,0 +1,24 @@
+.nav {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom,
+            rgb(228, 232, 235, 0.9)
+            /* Light color at the top */
+            rgba(0, 0, 0, 0.9)
+            /* Darker color at the bottom */
+        );
+
+    z-index: 100;
+
+    .wrapper {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

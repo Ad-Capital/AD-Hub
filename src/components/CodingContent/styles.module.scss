@@ -1,0 +1,18 @@
+.main{
+  padding-top: 30vh;
+  padding-bottom: 10vh;
+  position: relative;
+
+  h1{
+    padding: 20px;
+    font-size: 2vw; 
+    max-width: 80%;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 640px) {
+    h1 {
+      font-size: 4vw;
+  
+    }
+  }
+}
