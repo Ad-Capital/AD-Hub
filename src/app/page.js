@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import Preloader from "@/components/Preloader";
 import Lenis from '@studio-freight/lenis';
 import Landing from "@/sections/Landing";
-import Featured from "@/sections/featured/Featured";
+import Featured from "@/sections/Featured/Featured";
 import LatestPosts from "@/sections/LatestPosts";
 import SlidingImages from "@/sections/SlidingImages";
 

@@ -47,17 +47,7 @@
         background-color: transparent;
     }
 
-    .mobileNav {
-        width: 25vw;
-    }
 
-    @media screen and (min-width: 1024px) {
-        .mobileNav {
-            display: none;
-            padding-right: 50vw;
-        }
-
-    }
 
     .navlinks {
         display: flex;
@@ -217,4 +207,15 @@
             cursor: pointer;
         }
     }
+}
+.mobileNav {
+    width: 25vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .mobileNav {
+        display: none;
+        padding-right: 50vw;
+    }
+
 }

@@ -7,7 +7,7 @@ import { slideUp, opacity } from './animation';
 import Rounded from '../../components/RoundedButton';
 export default function index() {
 
-    const phrase = "Welcome to AD Hub! This is where we dive into everything we love; fashion, music, food, travel, coding, and more. It’s all about sharing ideas, stories, and experiences that spark curiosity and creativity. So, explore, connect, and let’s make life a little more exciting together.";
+    const phrase = "Welcome to CybroCity. This is where we dive into everything we love; fashion, music, food, travel, coding, and more. It’s all about sharing ideas, stories, and experiences that spark curiosity and creativity. So, explore, connect, and let’s make life a little more exciting together.";
     const description = useRef(null);
     const isInView = useInView(description)
     return (
@@ -20,7 +20,7 @@ export default function index() {
                         })
                     }
                 </p>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
+                {/* <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <div data-scroll data-scroll-speed={0.1} className={styles.description}>
                         <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ export default function index() {
                         <p>Spicy &</p>
                         <p>Creative Hot Topics</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

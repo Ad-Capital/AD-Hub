@@ -10,25 +10,25 @@ const projects = [
   {
     title: "The Power of Abstract Art",
     category: "Art",
-    src: "c2montreal.png",
+    src: "drawing.jpg",
     color: "#000000"
   },
   {
     title: "Sustainable Fashion is Here",
     category: "Fashion",
-    src: "officestudio.png",
+    src: "yellow.jpg",
     color: "#8C8C8C"
   },
   {
     title: "Top Indie Artists Now",
     category: "Music",
-    src: "locomotive.png",
+    src: "concert.jpg",
     color: "#EFE8D3"
   },
   {
     title: "Forex Support and Resistance",
     category: "T-A",
-    src: "silencio.png",
+    src: "position.jpg",
     color: "#706D63"
   }
 ]

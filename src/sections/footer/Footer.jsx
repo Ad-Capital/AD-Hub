@@ -8,41 +8,39 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <h1 className={styles.logoText}>AD Hub</h1>
+          <h1 className={styles.logoText}>CybroCity</h1>
         </div>
         <p className={styles.desc}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          necessitatibus similique aspernatur obcaecati veritatis. Aperiam cum
-          porro sequi, totam minima consequuntur, aspernatur deleniti vero
-          repellendus dorales.
+        Where culture meets creativity - your daily dose of art, 
+        style, music, movies, travel, food, and tech. No fluff, just good stuff.
         </p>
-        <div className={styles.icons}>
+        <p className={styles.desc2}>© 2025 CybroCity. All Rights Reserved.</p>
+        {/* <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
           <Image src="/instagram.png" alt="" width={18} height={18} />
           <Image src="/tiktok.png" alt="" width={18} height={18} />
           <Image src="/youtube.png" alt="" width={18} height={18} />
-        </div>
+        </div> */}
       </div>
       <div className={styles.links}>
         <div className={styles.list}>
-          <span className={styles.listTitle}>Links</span>
-          <Link href="/">Portfolio</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <span className={styles.listTitle}>Company</span>
+          <Link href="https://onaadrian.vercel.app/">Portfolio</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
-        <div className={styles.list}>
+        {/* <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
           <Link href="/">Style</Link>
           <Link href="/">Technical Analysis</Link>
           <Link href="/">Coding</Link>
           <Link href="/">Travel</Link>
-        </div>
+        </div> */}
         <div className={styles.list}>
-          <span className={styles.listTitle}>Social</span>
+          <span className={styles.listTitle}>Follow</span>
           <Link href="/">Twitter</Link>
           <Link href="/">Instagram</Link>
-          <Link href="/">LinkedIn</Link>
+          <Link href="/">Tiktok</Link>
           <Link href="/">Youtube</Link>
         </div>
       </div>

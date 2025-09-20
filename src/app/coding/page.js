@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>
-      <span className={styles.title}>Coding</span>: Where Ideas Become Reality<br />
+      <span className={styles.title}>Coding,</span> where ideas become reality.<br />
       Dive into the world of code, where creativity meets logic. 
       From simple scripts to complex builds, this is where problem-solving and innovation come to life.
       </h1>

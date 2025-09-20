@@ -45,4 +45,13 @@ body {
   transform: translate(-50%, -50%);
   z-index: 999;
 }
-
+/* Add this to your global CSS file */
+.page-transition svg {
+  position: fixed;
+  height: calc(100vh + 600px);
+  width: 100vw;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  color: black; /* SVG fill color - can be customized */
+}

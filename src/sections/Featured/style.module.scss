@@ -104,8 +104,18 @@
         }
 
         .description{
-            top: 175%;
-            left: 40%;
+            top: 170%;
+            left: 48%;
+
+            p {
+                margin: 0px;
+                margin-bottom: 10px;
+            }
+    
+            svg {
+                transform: scale(2);
+                margin-bottom: 35px;
+            }
         }
 
         .images {

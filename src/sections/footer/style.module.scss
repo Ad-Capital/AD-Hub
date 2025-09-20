@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
+    border-top: 1px solid rgb(201, 201, 201);
     color: var(--softTextColor);
   }
   
@@ -24,10 +25,15 @@
   
   .logoText {
     font-size: 24px;
+    font-weight: bold;
   }
   
   .desc {
     font-weight: 300;
+  }
+  .desc2 {
+    font-weight: 600;
+    font-size: 12px;
   }
   
   .icons {

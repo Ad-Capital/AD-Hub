@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../sections/Navbar"
-import Footer from "@/sections/Footer/Footer";
+import Footer from "@/sections/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "AD Hub",
+  title: "CybroCity",
   description: "Talks about all things creative.",
 };
 

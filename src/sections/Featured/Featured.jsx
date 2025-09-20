@@ -3,14 +3,14 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { useRef } from "react";
-import Picture1 from '../../../public/AD.jpg';
+import Picture1 from '../../../public/ad.jpg';
 import Picture2 from '../../../public/food.jpg';
 import Picture3 from '../../../public/fashion.png';
 import Image from "next/image";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 
-const word = "with Trader AD";
+const word = "with Cybro";
 
 export default function Index() {
   const container = useRef(null);
