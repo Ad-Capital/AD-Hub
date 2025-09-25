@@ -2,7 +2,7 @@
 import styles from './style.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, background } from './anim';
 import Nav from './nav';
@@ -14,6 +14,30 @@ import classNames from 'classnames';
 export default function index() {
 
     const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+        if (isActive) {
+            const scrollY = window.scrollY;
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.width = '100%';
+            document.body.style.overflow = 'hidden';
+            
+            return () => {
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.width = '';
+                document.body.style.overflow = '';
+                window.scrollTo(0, scrollY);
+            };
+        } else {
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflow = '';
+        }
+    }, [isActive]);
+
 
     return (
         <section>
@@ -42,7 +66,13 @@ export default function index() {
                     </div>
                 </div>
 
-                <motion.div variants={background} initial="initial" animate={isActive ? "open" : "closed"} className={styles.background}></motion.div>
+                <motion.div 
+                    variants={background} 
+                    initial="initial" 
+                    animate={isActive ? "open" : "closed"} 
+                    className={styles.background}
+                    onClick={() => setIsActive(false)}
+                ></motion.div>
                 <AnimatePresence mode="wait">
                     {isActive && <Nav setIsActive={setIsActive} />}
                 </AnimatePresence>
